@@ -21,5 +21,7 @@ public class SkType {
     private String name;
     @OneToMany
     private List<Skill> skills = new ArrayList<>();
+
+
 }
 

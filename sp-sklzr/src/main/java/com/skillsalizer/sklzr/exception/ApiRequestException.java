@@ -1,11 +1,13 @@
 package com.skillsalizer.sklzr.exception;
 
-public class ApiRequestException extends RuntimeException{
-    public ApiRequestException(String message){
+public class ApiRequestException extends RuntimeException {
+    // ApiRequestException first constructor
+    public ApiRequestException(String message) {
         super(message);
     }
 
-    public ApiRequestException(String message,Throwable cause){
-        super(message,cause);
+    //ApiRequestException second constructor
+    public ApiRequestException(String message, Throwable cause) {
+        super(message, cause);
     }
 }

@@ -1,8 +1,8 @@
 package com.skillsalizer.sklzr.services;
 
 import com.skillsalizer.sklzr.entities.Consultant;
-import com.skillsalizer.sklzr.exception.ApiException;
-import com.skillsalizer.sklzr.exception.ApiRequestException;
+//import com.skillsalizer.sklzr.exception.ApiException;
+//import com.skillsalizer.sklzr.exception.ApiRequestException;
 import com.skillsalizer.sklzr.repositories.ConsultantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,7 @@
 package com.skillsalizer.sklzr.controllers;
 
 import com.skillsalizer.sklzr.entities.Consultant;
+import com.skillsalizer.sklzr.exception.ApiRequestException;
 import com.skillsalizer.sklzr.services.ConsultantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,6 +23,8 @@ public class ConsultantController {
     public ResponseEntity<Consultant> postConsultant(@RequestBody Consultant c) {
         return new ResponseEntity<>(this.consultantService.saveConsultant(c),
                 HttpStatus.CREATED);
+        //customize exception test
+        //throw new ApiRequestException("le test fonctionne", e);
     }
 
     //Update an Consultant using the Service's "updateConsultant()" function
@@ -50,8 +53,6 @@ public class ConsultantController {
     public ResponseEntity<Void> deleteConsultantById(@PathVariable Long id) {
         this.consultantService.deleteConsultantById(id);
         return new ResponseEntity<>(null, HttpStatus.OK);
-        //        throw new ApiRequestException("le test fonctionne");
-
 
     }
 
