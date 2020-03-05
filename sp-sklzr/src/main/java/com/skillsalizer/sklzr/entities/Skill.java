@@ -20,9 +20,6 @@ public class Skill {
     private String description;
 
     @ManyToOne
-    private SkType skType;
-
-    @ManyToOne
     private SkLevel skLevel;
 
 }

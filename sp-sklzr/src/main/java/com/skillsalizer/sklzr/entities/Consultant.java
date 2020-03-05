@@ -22,5 +22,5 @@ public class Consultant {
     private String lastname;
 
     @ManyToMany
-    private List<Skill> skills =new ArrayList<>();
+    private List<SkType> skTypes = new ArrayList<>();
 }
