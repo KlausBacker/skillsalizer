@@ -50,6 +50,9 @@ public class ConsultantController {
     public ResponseEntity<Void> deleteConsultantById(@PathVariable Long id) {
         this.consultantService.deleteConsultantById(id);
         return new ResponseEntity<>(null, HttpStatus.OK);
+        //        throw new ApiRequestException("le test fonctionne");
+
+
     }
 
 }

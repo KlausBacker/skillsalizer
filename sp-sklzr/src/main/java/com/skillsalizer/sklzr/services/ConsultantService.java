@@ -40,8 +40,7 @@ public class ConsultantService {
 
     // Delete an Consultant by is ID using the Repository's "deleteById()" function
     public void deleteConsultantById(Long aLong) {
-        throw new ApiRequestException("le test fonctionne");
-        // consultantRepository.deleteById(aLong);
+        consultantRepository.deleteById(aLong);
     }
 
 
