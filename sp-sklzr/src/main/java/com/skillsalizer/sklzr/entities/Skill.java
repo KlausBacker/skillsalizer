@@ -18,8 +18,8 @@ public class Skill {
     private Long id;
     private String name;
     private String description;
-
     @ManyToOne
-    private SkLevel skLevel;
+    private SkType Sktype;
+
 
 }

@@ -1,0 +1,21 @@
+{
+  "title": "sktype",
+  "entity": "sktype",
+  "api": {
+    "url": "http://localhost:8282/"
+  },
+  "fields": [
+    {
+      "name": "id",
+      "label": "Id",
+      "isId": true,
+      "readonly": true,
+      "type": "number"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "label": "Name"
+    }
+  ]
+}

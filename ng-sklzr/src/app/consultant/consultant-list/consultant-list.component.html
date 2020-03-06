@@ -1,0 +1,42 @@
+<ol class="breadcrumb float-right">
+  <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+  <li class="breadcrumb-item active">Consultant</li>
+</ol>
+<div class="card">
+  <div class="header">
+    <h2 class="title">Consultant List</h2>
+  </div>
+  <div class="content">
+    <form #f="ngForm">
+
+      <a [routerLink]="['consultants/', 'new' ]" class="btn btn-default">New</a>
+    </form>
+  </div>
+</div>
+<div class="card" *ngIf="consultantList.length > 0">
+  <div *ngIf="feedback" class="alert alert-{{feedback.type}}">{{ feedback.message }}</div>
+  <div class="table-responsive">
+    <table class="table table-centered table-hover mb-0" id="datatable">
+      <thead>
+      <tr>
+        <th class="border-top-0" scope="col">Id</th>
+        <th class="border-top-0" scope="col">Firstname</th>
+        <th class="border-top-0" scope="col">Lastname</th>
+        <th class="border-top-0" scope="col" style="width:120px"></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of consultantList" [class.active]="item === selectedConsultant">
+
+        <td>{{item.id}}</td>
+        <td>{{item.firstname}}</td>
+        <td>{{item.lastname}}</td>
+        <td style="white-space: nowrap">
+          <a [routerLink]="['consultants/', item.id ]" class="btn btn-secondary">Edit</a>&nbsp;
+          <button (click)="delete(item)" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

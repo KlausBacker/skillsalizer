@@ -19,9 +19,5 @@ public class SkType {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @OneToMany
-    private List<Skill> skills = new ArrayList<>();
-
-
 }
 

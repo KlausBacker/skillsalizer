@@ -20,7 +20,6 @@ public class Consultant {
     private Long id;
     private String firstname;
     private String lastname;
-
     @ManyToMany
-    private List<SkType> skTypes = new ArrayList<>();
+    private List<SkillSklevel> skillSklevels = new ArrayList<>();
 }

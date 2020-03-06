@@ -1,0 +1,26 @@
+{
+  "title": "Consultant",
+  "entity": "consultant",
+  "api": {
+    "url": "http://localhost:8282/"
+  },
+  "fields": [
+    {
+      "name": "id",
+      "label": "Id",
+      "isId": true,
+      "readonly": true,
+      "type": "number"
+    },
+    {
+      "name": "firstname",
+      "type": "string",
+      "label": "Firstname"
+    },
+    {
+      "name": "lastname",
+      "type": "string",
+      "label": "Lastname"
+    }
+  ]
+}
